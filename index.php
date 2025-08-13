@@ -14,3 +14,13 @@ if(isset($_GET['message']) && $_GET['message'] != '') {
 
 $cow = Farm::create(\Cowsayphp\Farm\Cow::class);
 echo $cow->say($text);
+
+<?php
+  // Assuming your video file is named "my_video.mp4" and is in the same directory as your PHP script
+  $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/bong.mp4"; 
+?>
+
+<video width="640" height="360" controls>
+  <source src="<?php echo $videoPath; ?>" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

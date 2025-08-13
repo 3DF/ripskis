@@ -5,7 +5,7 @@ use Cowsayphp\Farm;
 
 header('Content-Type: text/plain');
 
-$text = "Hi!  I'm the Ripskis cow.  This is the future home of Ripskis.";
+$text = "Hi!  I'm the Ripskis cow.  This is the future home of Ripskis.  The best bonghits from around the universe!";
 //$text = "Set a message by adding ?message=<message here> to the URL";
 
 if(isset($_GET['message']) && $_GET['message'] != '') {

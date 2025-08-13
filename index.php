@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 require __DIR__ . '/vendor/autoload.php';
 

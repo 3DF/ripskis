@@ -1,10 +1,11 @@
-<!DOCTYPE html>
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
 use Cowsayphp\Farm;
 
-header('Content-Type: text/plain');
+//header('Content-Type: text/plain');
+header('Content-Type: text/html');
+
 
 $text = "Hi!  I'm the Ripskis cow.  This is the future home of Ripskis.  The best bonghits from around the universe!";
 //$text = "Set a message by adding ?message=<message here> to the URL";

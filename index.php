@@ -23,9 +23,14 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 <html>
 <head></head>
 <body>
-<video width="640" height="360" controls>
-  <source src="<?php echo $videoPath; ?>" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+	Ripskis
+	<br/>
+	The best bong hits from around the universe
+	<br/>
+	<br/>	
+	<video width="640" height="360" controls>
+		<source src="<?php echo $videoPath; ?>" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
 </body>
 </html>

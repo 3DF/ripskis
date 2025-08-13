@@ -1,6 +1,5 @@
-const SUPABASE_URL = 'YOUR_SUPABASE_URL'; // Replace with your project URL
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY'; // Replace with your Public Anon Key
-
+const SUPABASE_URL = 'https://ybcledejiqybeyogdgyr.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InliY2xlZGVqaXF5YmV5b2dkZ3lyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwODQ5ODIsImV4cCI6MjA3MDY2MDk4Mn0.o20c8aW3aOqSPiH7ayAkZMDZtOzeiDQU3MNbL9Hz1e4';
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const videoInput = document.getElementById('videoInput');
@@ -14,8 +13,8 @@ uploadButton.addEventListener('click', async () => {
     return;
   }
 
-  const bucketName = 'your_video_bucket'; // Replace with your bucket name
-  const filePath = `public/${videoFile.name}`; // Example path within the bucket
+  const bucketName = 'videos';
+  const filePath = `${videoFile.name}`; // path within the bucket
 
   try {
     const { data, error } = await supabase.storage

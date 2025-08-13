@@ -21,7 +21,10 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 ?>
 
 <html>
-<head></head>
+<head>
+	<title>Ripskis</title>
+	<link rel="icon" type="image/x-icon" href="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/bong.png">
+</head>
 <body>
 	Ripskis
 	<br/>

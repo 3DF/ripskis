@@ -35,5 +35,11 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 		<source src="<?php echo $videoPath; ?>" type="video/mp4">
 		Your browser does not support the video tag.
 	</video>
+	<br/>
+	<br/>
+	<input type="file" id="videoInput" accept="video/*">
+    <button id="uploadButton">Upload Video</button>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
 </body>
 </html>

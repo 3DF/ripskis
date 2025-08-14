@@ -24,6 +24,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 <head>
 	<title>Ripskis</title>
 	<link rel="icon" type="image/x-icon" href="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/favicon.ico">
+	<script type="module" src="script.js"></script>
 </head>
 <body>
 	Ripskis
@@ -39,6 +40,5 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	<br/>
 	<input type="file" id="videoInput" accept="video/*">
     <button id="uploadButton">Upload Video</button>
-    <script type="module" src="script.js"></script>
 </body>
 </html>

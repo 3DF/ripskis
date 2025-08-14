@@ -39,7 +39,6 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	<br/>
 	<input type="file" id="videoInput" accept="video/*">
     <button id="uploadButton">Upload Video</button>
-	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script type="module" src="script.js"></script>
 </body>
 </html>

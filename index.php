@@ -26,7 +26,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	</video>
 	<br/>
 	<br/>
-	<input type="file" id="videoInput" accept="video/*" name="Choose video">
+	<input type="file" id="videoInput" accept="video/*">
     <button id="uploadButton">Upload Video</button>
 </body>
 </html>

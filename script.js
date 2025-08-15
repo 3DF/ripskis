@@ -8,7 +8,7 @@ const videoInput = document.getElementById('videoInput');
 const uploadButton = document.getElementById('uploadButton');
 const nextButton = document.getElementById('nextButton');
 const bucketName = 'videos';
-int videoIndex = 0;
+val videoIndex = 0;
 
 uploadButton.addEventListener('click', async () => {
   const videoFile = videoInput.files[0];

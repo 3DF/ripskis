@@ -8,6 +8,7 @@ body {
   overscroll-behavior: none;
   margin-left: 20px;
   margin-top: 20px;
+  font-family: system-ui;
 }
 
 h1 {

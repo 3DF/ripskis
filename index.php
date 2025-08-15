@@ -35,7 +35,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	<h2>The best bong hits from around the universe</h2>
 	<br/>
 	<br/>	
-	<video width="640" height="360" controls>
+	<video controls>
 		<source src="<?php echo $videoPath; ?>" type="video/mp4">
 		Your browser does not support the video tag.
 	</video>

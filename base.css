@@ -16,18 +16,11 @@ h2 {
   color: white;
 }
 
-.next-video {
-}
-
-#video-player {
-  width: 640px;
-  height: 360px;
+video {
+  max-width:900px;
+  width:100%;
 }
 
 @media (max-width: 600px) {
   /* CSS that should be displayed if width is equal to or less than 600px goes here */
-  .next-video {
-    bottom: 20%;
-    left: 5%;
-  }
 }

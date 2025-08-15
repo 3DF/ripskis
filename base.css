@@ -20,8 +20,8 @@ h2 {
 }
 
 #video-player {
-  width="640";
-  height="360";
+  width: 640;
+  height: 360;
 }
 
 @media (max-width: 600px) {

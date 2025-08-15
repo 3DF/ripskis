@@ -6,6 +6,8 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const videoInput = document.getElementById('videoInput');
 const uploadButton = document.getElementById('uploadButton');
+const nextButton = document.getElementById('nextButton');
+const bucketName = 'videos';
 
 uploadButton.addEventListener('click', async () => {
   const videoFile = videoInput.files[0];
@@ -15,7 +17,6 @@ uploadButton.addEventListener('click', async () => {
     return;
   }
 
-  const bucketName = 'videos';
   const filePath = `${videoFile.name}`; // path within the bucket
 
   try {
@@ -37,5 +38,26 @@ uploadButton.addEventListener('click', async () => {
   } catch (err) {
     console.error('An unexpected error occurred:', err);
     alert('An unexpected error occurred during upload.');
+  }
+});
+
+nextButton.addEventListener('click', async () => {
+  const { data: files, error: filesError } = await supabase
+    .storage
+    .from(bucketName)
+    .list(''); // The empty string indicates listing all files at the root of the bucket
+
+  if (filesError) {
+    console.error(`Error listing files in bucket "${bucketName}":`, filesError.message);
+    return;
+  }
+
+  if (files.length > 0) {
+    console.log(`Files in bucket "${bucketName}":`);
+    files.forEach(file => {
+      console.log(`- Name: ${file.name}, Size: ${file.size} bytes, Last Modified: ${file.updated_at}`);
+    });
+  } else {
+    console.log(`Bucket "${bucketName}" is empty.`);
   }
 });

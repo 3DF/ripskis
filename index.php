@@ -26,6 +26,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	</video>
 	<br/>
 	<br/>
+	<h3>Next ripski</h3>
 	<img class="next" src="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/icons/next.png" alt="Next ripski">
 	<br/>
 	<br/>
@@ -33,5 +34,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	<br/>
 	<input type="file" id="videoInput" accept="video/*">
     <button id="uploadButton">Upload Video</button>
+	<br/>
+	<br/>
 </body>
 </html>

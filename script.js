@@ -55,7 +55,7 @@ nextButton.addEventListener('click', async () => {
   }
 
   if (files.length > 0) {
-    videoIndex = videoIndex mod files.length;
+    videoIndex = videoIndex % files.length;
     console.log(`videoIndex:` + videoIndex);
     console.log(`Files in bucket "${bucketName}":`);
     files.forEach(file => {

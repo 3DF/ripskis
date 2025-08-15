@@ -12,7 +12,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 <head>
 	<title>Ripskis</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/Icons/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<script type="module" src="script.js"></script>
 </head>
@@ -26,7 +26,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	</video>
 	<br/>
 	<br/>
-	<img src="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/Icons/next.png" alt="Next ripski">
+	<img src="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/icons/next.png" alt="Next ripski">
 	<br/>
 	<br/>
 	<h3>Add your own ripski ...</h3>

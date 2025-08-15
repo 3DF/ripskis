@@ -30,7 +30,7 @@ video {
 
 .next {
   width: 128px;
-  margin-left: 128px;
+  margin-left: 40%;
 }
 .next:hover {
   cursor: pointer;

@@ -61,7 +61,21 @@ nextButton.addEventListener('click', async () => {
     files.forEach(file => {
       console.log(`- Name: ${file.name}, Size: ${file.size} bytes, Last Modified: ${file.updated_at}`);
     });
-    console.log(files[videoIndex].getPublicUrl());
+    var nextVideoName = files[videoIndex].name;
+    console.log('Next video: ' + nextVideoName);
+
+    const { data: publicUrlData, error } = supabase.storage
+      .from(bucketName)
+      .getPublicUrl(nextVideoName);
+
+    if (error) {
+      console.error('Error getting public URL:', error);
+    } else {
+      const publicUrl = publicUrlData.publicUrl;
+      console.log('Public URL:', publicUrl);
+    }
+
+    
   } else {
     console.log(`Bucket "${bucketName}" is empty.`);
   }

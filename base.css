@@ -8,6 +8,14 @@ body {
   overscroll-behavior: none;
 }
 
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
 .next-video {
 }
 

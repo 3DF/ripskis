@@ -26,7 +26,7 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	</video>
 	<br/>
 	<br/>
-	<img class="next" src="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/icons/next.png" alt="Next ripski">
+	<img id="nextButton" class="next" src="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/icons/next.png" alt="Next ripski">
 	<br/>
 	<br/>
 	<h3>Add your own ripski ...</h3>

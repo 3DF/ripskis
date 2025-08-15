@@ -8,6 +8,7 @@ const videoInput = document.getElementById('videoInput');
 const uploadButton = document.getElementById('uploadButton');
 const nextButton = document.getElementById('nextButton');
 const bucketName = 'videos';
+int videoIndex = 0;
 
 uploadButton.addEventListener('click', async () => {
   const videoFile = videoInput.files[0];
@@ -42,6 +43,7 @@ uploadButton.addEventListener('click', async () => {
 });
 
 nextButton.addEventListener('click', async () => {
+  videoIndex++;
   const { data: files, error: filesError } = await supabase
     .storage
     .from(bucketName)
@@ -53,10 +55,13 @@ nextButton.addEventListener('click', async () => {
   }
 
   if (files.length > 0) {
+    videoIndex = videoIndex mod files.length;
+    console.log(`videoIndex:` + videoIndex);
     console.log(`Files in bucket "${bucketName}":`);
     files.forEach(file => {
       console.log(`- Name: ${file.name}, Size: ${file.size} bytes, Last Modified: ${file.updated_at}`);
     });
+    console.log(files[videoIndex].getPublicUrl());
   } else {
     console.log(`Bucket "${bucketName}" is empty.`);
   }

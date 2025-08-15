@@ -23,6 +23,7 @@ video {
 
 .next {
   width: 128px;
+  margin-left: 128px;
 }
 
 @media (max-width: 600px) {

@@ -17,7 +17,8 @@ if(isset($_GET['message']) && $_GET['message'] != '') {
 $cow = Farm::create(\Cowsayphp\Farm\Cow::class);
 //echo $cow->say($text);
 
-$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/bong.mp4"; 
+//$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/bong.mp4"; 
+$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/IMG_4635.mov";
 ?>
 
 <html>

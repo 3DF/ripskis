@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 h1 {

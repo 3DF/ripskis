@@ -26,12 +26,13 @@ $videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/
 	<title>Ripskis</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="base.css">
 	<script type="module" src="script.js"></script>
 </head>
 <body>
-	Ripskis
+	<h1>Ripskis</h1>
 	<br/>
-	The best bong hits from around the universe
+	<h2>The best bong hits from around the universe</h2>
 	<br/>
 	<br/>	
 	<video width="640" height="360" controls>

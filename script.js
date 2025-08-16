@@ -5,6 +5,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const videoPlayer = document.getElementById('videoPlayer');
+const videoSource = document.getElementById('videoSource');
 const videoInput = document.getElementById('videoInput');
 const uploadButton = document.getElementById('uploadButton');
 const nextButton = document.getElementById('nextButton');
@@ -74,10 +75,7 @@ nextButton.addEventListener('click', async () => {
     } else {
       const publicUrl = publicUrlData.publicUrl;
       console.log('Public URL:', publicUrl);
-      var source = document.createElement('source');
-      source.setAttribute('src', publicUrl);
-      source.setAttribute('type', 'video/mp4');
-      videoPlayer.appendChild(source);
+      videoSource.src = publicUrl;
       videoPlayer.load();
     }
 

@@ -74,6 +74,11 @@ nextButton.addEventListener('click', async () => {
     } else {
       const publicUrl = publicUrlData.publicUrl;
       console.log('Public URL:', publicUrl);
+      var source = document.createElement('source');
+      source.setAttribute('src', publicUrl);
+      source.setAttribute('type', 'video/mp4');
+      video.appendChild(source);
+      video.load();
     }
 
     

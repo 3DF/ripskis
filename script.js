@@ -77,8 +77,8 @@ nextButton.addEventListener('click', async () => {
       var source = document.createElement('source');
       source.setAttribute('src', publicUrl);
       source.setAttribute('type', 'video/mp4');
-      video.appendChild(source);
-      video.load();
+      videoPlayer.appendChild(source);
+      videoPlayer.load();
     }
 
     

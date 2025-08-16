@@ -4,8 +4,8 @@ require __DIR__ . '/vendor/autoload.php';
 //header('Content-Type: text/plain');
 header('Content-Type: text/html');
 
-//$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/bong.mp4"; 
-$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/IMG_4635.mov";
+$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/bong.mp4"; 
+//$videoPath = "https://ybcledejiqybeyogdgyr.supabase.co/storage/v1/object/public/videos/IMG_4635.mov";
 ?>
 
 <html>
